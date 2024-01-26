@@ -45,3 +45,4 @@ D:\Documents\GitHub\LCModding\LandmineScrap\LandmineScrapPlugin\bin\Debug\netsta
 D:\Documents\GitHub\LCModding\LandmineScrap\LandmineScrapPlugin\bin\Debug\netstandard2.1\Newtonsoft.Json.dll
 D:\Documents\GitHub\LCModding\LandmineScrap\LandmineScrapPlugin\bin\Debug\netstandard2.1\Unity.Profiling.Core.dll
 D:\Documents\GitHub\LCModding\LandmineScrap\LandmineScrapPlugin\obj\Debug\netstandard2.1\LandmineScrapPlugin.csproj.CopyComplete
+D:\Documents\GitHub\LCModding\LandmineScrap\LandmineScrapPlugin\bin\Debug\netstandard2.1\LethalLib.dll

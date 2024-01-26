@@ -14,7 +14,9 @@
           "BepInEx.Core": "5.4.21",
           "BepInEx.PluginInfoProps": "1.1.0",
           "UnityEngine.Modules": "2022.3.9",
-          "Assembly-CSharp": "0.0.0.0"
+          "Assembly-CSharp": "0.0.0.0",
+          "LethalLib": "0.0.0.0",
+          "Unity.Netcode.Runtime": "0.0.0.0"
         },
         "runtime": {
           "LandmineScrapPlugin.dll": {}
@@ -387,6 +389,14 @@
           "Assembly-CSharp.dll": {
             "assemblyVersion": "0.0.0.0",
             "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "LethalLib/0.0.0.0": {
+        "runtime": {
+          "LethalLib.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.13.2.0"
           }
         }
       },
@@ -952,6 +962,11 @@
       "hashPath": "unityengine.modules.2022.3.9.nupkg.sha512"
     },
     "Assembly-CSharp/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LethalLib/0.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

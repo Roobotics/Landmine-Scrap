@@ -11,7 +11,7 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute("Assembly-CSharp")]
+[assembly: System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute("")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("LandmineScrapPlugin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Disarm and sell landmines")]
