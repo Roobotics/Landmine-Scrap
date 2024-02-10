@@ -38,6 +38,11 @@ namespace LandmineScrapPlugin.components
 
 			mineScrap.GetComponent<NetworkObject>().Spawn();
 			
+			if (!mineScrap.GetComponent<PhysicsProp>().isInShipRoom && !mineScrap.GetComponent<PhysicsProp>().isInFactory)
+			{
+				mineScrap.transform.position += new Vector3(0f, 2f, 0f);
+			}
+
 			// Destroy the landmine
 			LandmineScrapBase.Instance.mls.LogInfo("Attempting to destroy landmine!");
 			Destroy(mine);
@@ -49,6 +54,12 @@ namespace LandmineScrapPlugin.components
 			int scrapValue = UnityEngine.Random.Range(minValue, maxValue);
 
 			SetLandmineScrapValueClientRPC(mineScrap.GetComponent<NetworkObject>().NetworkObjectId, scrapValue);
+		}
+
+		[ServerRpc(RequireOwnership = false)]
+		public void RemoveLandmineServerRPC(ulong landmineNetworkID)
+		{
+			Destroy(GetNetworkObject(landmineNetworkID).gameObject, 5.0f);
 		}
 
 		[ClientRpc]

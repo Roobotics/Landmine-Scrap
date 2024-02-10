@@ -3,6 +3,8 @@ using LandmineScrapPlugin.components;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Unity.Netcode;
+using UnityEngine;
 
 namespace LandmineScrapPlugin.Patches
 {
@@ -13,6 +15,12 @@ namespace LandmineScrapPlugin.Patches
 		public static void addInteraction(Landmine __instance)
 		{
 			CustomLandmines.addInteractionTrigger(__instance);
+		}
+
+		[HarmonyPostfix, HarmonyPatch(typeof(Landmine), "Detonate")]
+		public static void remove(Landmine __instance)
+		{
+			CustomNetworkHandler.Instance.RemoveLandmineServerRPC(__instance.transform.parent.GetComponent<NetworkObject>().NetworkObjectId);
 		}
 	}
 }

@@ -44,7 +44,7 @@ namespace LandmineScrapPlugin.components
 
 		private static void RollDisarm(GameObject mineObject, PlayerControllerB player)
 		{
-			int failThreshold = 25;
+			int failThreshold = 34;
 			int roll = UnityEngine.Random.Range(0, 100);
 
 			LandmineScrapBase.Instance.mls.LogInfo("Rolled chance: " + roll);
